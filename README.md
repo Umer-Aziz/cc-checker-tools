@@ -1,4 +1,5 @@
 # CC Checker /edu
+<img width="1920" height="3368" alt="image" src="https://github.com/user-attachments/assets/a57bcde8-0922-4294-9499-7ac1bfba7176" />
 
 An educational platform for learning how credit-card validation, BIN databases, and payment processing work under the hood. Built with Next.js 16 (App Router), TypeScript, and Tailwind CSS.
 
