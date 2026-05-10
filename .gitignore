@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
@@ -30,8 +31,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files — never commit secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# .env.example is intentionally NOT ignored (it's the public template)
 
 # vercel
 .vercel
@@ -39,3 +45,25 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI agent / IDE config — not relevant to the project itself
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+.claude/
+.cursor/
+.aider*
+.copilot/
+
+# Design specs and internal docs
+/docs/
+
+# OS metadata
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
